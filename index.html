@@ -234,17 +234,17 @@
         </div>
       </div>
       <div class="column">
-             <!-- 地图 -->
-      <div class="map">
-        <h3>
-          <span class="iconCube"></span>
-          设备数据统计
-        </h3>
-        <div class="chart">
-          <!--地图-->
-          <div class="geo"></div>
+        <!-- 地图 -->
+        <div class="map">
+          <h3>
+            <span class="iconCube"></span>
+            设备数据统计
+          </h3>
+          <div class="chart">
+            <!--地图-->
+            <div class="geo"></div>
+          </div>
         </div>
-      </div>
         <!--用户-->
      <!--用户-->
      <div class="users panel">
@@ -274,17 +274,173 @@
       </div>
       <div class="column">
         <!--订单-->
-        <div></div>
-        <!--销售-->
-        <div></div>
-        <div>
-          <!--渠道-->
-          <div></div>
-          <!--季度-->
-          <div></div>
+     <div class="order panel">
+      <div class="inner">
+        <!-- 筛选 -->
+        <div class="filter">
+          <a href="javascript:;" class="active">365天</a>
+          <a href="javascript:;">90天</a>
+          <a href="javascript:;">30天</a>
+          <a href="javascript:;">24小时</a>
         </div>
-        <!--排行-->
-        <div></div>
+        <!-- 数据 365天 -->
+        <div class="data orderData">
+          <div class="item">
+            <h4>20,301,987</h4>
+            <span>
+              <i class="line" style="background-color: #ed3f35"></i>
+              订单量
+            </span>
+          </div>
+          <div class="item">
+            <h4>99834</h4>
+            <span>
+              <i class="line" style="background-color: #eacf19"></i>
+              销售额(万元)
+            </span>
+          </div>
+        </div>
+
+        <!-- 数据 90天 -->
+        <div class="data orderData orderDataHidden">
+          <div class="item">
+            <h4>5,005,969</h4>
+            <span>
+              <i class="line" style="background-color: #ed3f35"></i>
+              订单量
+            </span>
+          </div>
+          <div class="item">
+            <h4>24616</h4>
+            <span>
+              <i class="line" style="background-color: #eacf19"></i>
+              销售额(万元)
+            </span>
+          </div>
+        </div>
+
+        <!-- 数据 30天 -->
+        <div class="data orderData orderDataHidden">
+          <div class="item">
+            <h4>1,668,656</h4>
+            <span>
+              <i class="line" style="background-color: #ed3f35"></i>
+              订单量
+            </span>
+          </div>
+          <div class="item">
+            <h4>8205</h4>
+            <span>
+              <i class="line" style="background-color: #eacf19"></i>
+              销售额(万元)
+            </span>
+          </div>
+        </div>
+
+        <!-- 数据 24小时 -->
+        <div class="data orderData orderDataHidden">
+          <div class="item">
+            <h4>556,218</h4>
+            <span>
+              <i class="line" style="background-color: #ed3f35"></i>
+              订单量
+            </span>
+          </div>
+          <div class="item">
+            <h4>27.563</h4>
+            <span>
+              <i class="line" style="background-color: #eacf19"></i>
+              销售额(万元)
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--销售-->
+              <!-- 销售额 -->
+      <div class="sales panel">
+        <div class="inner">
+          <div class="caption">
+            <h3>销售额统计</h3>
+            <a href="javascript:;" class="timeTab active" data-time="year"
+            >年</a
+          >
+          <a href="javascript:;" class="timeTab" data-time="quarter">季</a>
+          <a href="javascript:;" class="timeTab" data-time="month">月</a>
+          <a href="javascript:;" class="timeTab" data-time="week">周</a>
+          </div>
+          <div class="chart">
+            <div class="label">单位:万</div>
+            <div class="sline"></div>
+          </div>
+        </div>
+      </div>
+        <div>
+          <!-- 渠道 季度 -->
+        <div class="wrap">
+          <div class="channel panel">
+            <div class="inner">
+              <h3>渠道分布</h3>
+              <div class="data">
+                <div class="radar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="quarter panel">
+            <div class="inner">
+              <h3>一季度销售进度</h3>
+              <div class="chart">
+                <div class="box">
+                  <div class="gauge"></div>
+                  <div class="label">75<small> %</small></div>
+                </div>
+                <div class="data">
+                  <div class="item">
+                    <h4>1,321</h4>
+                    <span>
+                      <i class="line" style="background-color: #6acca3"></i>
+                      销售额(万元)
+                    </span>
+                  </div>
+                  <div class="item">
+                    <h4>150%</h4>
+                    <span>
+                      <i class="line" style="background-color: #ed3f35"></i>
+                      同比增长
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+       <!--进度-->
+       <div class="plan panel">
+        <div class="inner">
+          <h3>完成进度统计</h3>
+          <div class="chart">
+            <!-- 进度水球图 -->
+            <div class="water"></div>
+            <div class="data">
+              <div class="item">
+                <h4>800,0万</h4>
+                <span>
+                  <i class="line" style="background-color: #ed3f35"></i>
+                  计划收入
+                </span>
+              </div>
+              <div class="item">
+                <h4>544,0万</h4>
+                <span>
+                  <i class="line" style="background-color: #eacf19"></i>
+                  完成收入
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </body>
