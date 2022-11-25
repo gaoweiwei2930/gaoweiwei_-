@@ -40,8 +40,8 @@
             {
                 name: "点位统计",
                 type: "pie",
-                radius: ["10%", "75%"],
-                center: ["60%", "50%"],
+                radius: ["10%", "60%"],
+                center: ["50%", "50%"],
                 roseType: "radius",
                 data: [
                     { value: 20, name: "云南" },
@@ -57,8 +57,8 @@
                     fontSize: 10
                 },
                 labelLine: {
-                    length: 6,
-                    length2: 8
+                    length: 2,
+                    length2: 3
                 }
             }
         ]
