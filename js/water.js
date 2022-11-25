@@ -1,11 +1,7 @@
-// 进度水球图
-
 (function () {
     var myChart = echarts.init(document.querySelector('.water'));
     let compositeScore = 0.68;
-
     option = {
-        // backgroundColor: "rgba(225,225,225,.2)",
         graphic: [
             {
                 type: "group",
@@ -33,7 +29,7 @@
                 center: ["50%", "50%"], //中心点
                 data: [compositeScore], // data个数代表波浪数
                 // color: ["rgba(56, 194, 198, 0.5)"], //波浪颜色
-                color: ["#6ae4f6"], //波浪颜色
+                color: ["rgba(20,41,87,.2)"], //波浪颜色
                 backgroundStyle: {
                     color: {
                         type: "linearGradient",
