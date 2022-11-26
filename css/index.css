@@ -104,7 +104,7 @@ a {
 
 .overview h4 {
     font-size: 0.3rem;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0 0 0.06rem 0.1rem;
 }
 
@@ -176,7 +176,7 @@ a {
 
 .monitoring .content>.top {
     height: 0.4375rem;
-    color: #68d8fe;
+    color: #5fcef3;
     line-height: 0.4375rem;
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 0.15rem;
@@ -217,7 +217,9 @@ a {
 }
 
 @keyframes rollPlay {
-    0% {}
+    0% {
+        transform: translateY(0);
+    }
 
     100% {
         transform: translateY(-40%);
@@ -225,9 +227,9 @@ a {
 }
 
 .panel h3 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 0.2rem;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 /* 点位分布部分 */
@@ -326,7 +328,7 @@ a {
 }
 
 .users .bar {
-    width: 7.125rem;
+    width: 5rem;
     height: 2.4rem;
 }
 
@@ -371,15 +373,15 @@ a {
     border-right: 0.025rem solid #00f2f1;
 }
 
-.order .filter a:first-child {
+.order .filter a:nth-of-type(1) {
     padding-left: 0;
 }
 
-.order .filter a:last-child {
+.order .filter a:nth-last-of-type(1) {
     border-right: none;
 }
 
-.order .filter a.active {
+.order .filter .active {
     color: #fff;
     font-size: 0.225rem;
 }
@@ -469,15 +471,13 @@ a {
 
 .channel {
     flex: 2;
-    height: 1.625rem;
+    height: 1.7rem;
     margin-right: 0.15rem;
-    /* width: .75rem; */
 }
 
 .quarter {
     flex: 1;
     height: 1.7rem;
-    /* width: .5rem; */
 }
 
 .channel .data {
@@ -599,6 +599,6 @@ a {
 
 .plan span {
     display: block;
-    color: #f8ab05;
+    color: #fab011;
     font-size: 0.175rem;
 }
